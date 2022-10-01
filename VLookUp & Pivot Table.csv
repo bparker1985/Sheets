@@ -1,0 +1,21 @@
+Documentation for Functions & Formulas Sheet,,,,,,
+,,,,,,
+Task,,,Syntax/Process,,,Notes
+1. VLookUp,,,"VLOOKUP(key, range, index, is-sorted)",,,"- B29 is the seach key,"
+- Use VLookUp to find the cutomer name ,,,"VLOOKUP(B29, A2;M26, 6, FALSE)",,,-A2:M26 is the range I am searching in
+,,,"VLOOKUP(B29, $A$2;$M$26, 6, FALSE)",,,- The index is the column number that the data is in. In this case I 
+,,,,,,am looking for hte customer name
+- Use VLookUp to find the cutomer's country,,,"VLOOKUP(B29, A2;M26, 11, FALSE)",,,- Customer Name is the 6th column
+,,,"VLOOKUP(B29, $A$2;$M$26, 6, FALSE)",,,- The data is not sorted
+,,,,,,- After seeing that the formula worked I added absolute
+,,,,,,references so that it could be copied
+,,,,,,- The only change made is the column which is Country and that is the 11th column
+,,,,,,is the 11th column
+2. Pivot Table,,,,,,
+- Create a Pivot Table ,,,Select all the data in the data set -> Insert -> Pivot Table,,,
+,,,-> Existing Sheet -> Select Range (B35) -> Create,,,
+- Populate the Pivot Table,,,- Add Country as Row,,,
+,,,- Add Order Number as Value,,,
+,,,- Change Order Number from SUM to COUNT,,,- The data now shows the amount of orders that are from each country
+,,,- Add Product Line as Column,,,- The data now shows the particular product and quantity ordered from each country
+,,,,,,- The data also shows the Grand Total by Country and Product Line
