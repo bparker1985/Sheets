@@ -1,0 +1,18 @@
+Documentation for Sparklines Sheet,,,,,,
+,,,,,,
+Task,,,Syntax/Process,,,Notes
+1. Create a new Pivot Table,,,Create a Pivot Table and add Sparklines,,,"- Sparklines are small charts without axis, that are inside an individual cell"
+Create a new pivot table for which we will use,,,Select CDS -> Insert -> Pivot Table -> Existing Sheet -> Select Sparklines Sheet,,,- They are used to quickly see a summary without the complexity of a full chart
+Sparklines for,,,-> Select A1 -> Create,,,- Select CDS
+,,,1. SPARKLINE(B4:M4),,,"- Add Product Line as a Row, Quantity Ordered as Values, Month ID as Column"
+Copy the same Pivot Table for Bar Sparklines,,,"2. SPARKLINE(B5:M5, {""color"", ""red""})",,,- The rable is ready for Sparklines I will use 
+,,,"3. SPARKLINE(B6:M6, {""color"", ""red""; ""linewidth"", 3})",,,"- 1 is the default, but there are ways to modify it."
+,,,"4. SPARKLINE(B3:M3, {""color"", ""red""; ""linewidth"", 3; ""empty"", ""zero""})",,,- 2 Now the Sparkline is red
+,,,"5 SPARKLINE(B3:M3, {""charttype"", ""column""})",,,"- 3 Now the width of the Sparkline is larger, the higher the number the wider it gets"
+,,,"6 SPARKLINE(B3:M3,{""charttype"", ""column""; ""empty"", ""zero"";",,,"- 4 Modifying the Sparkline further, now when the Sparkline finds an empty cell it will display a 0"
+,,,"""highcolor"", ""green"";""lowcolor"", ""red""})",,,- 5 Expanding further on SPARKLINES now I have added a column instead of a line.
+,,,,,,- 6 For a more meaningful SPARKLINE the highest and the lowest columns can be highlighted
+,,,,,,
+,,,"1. SPARKLINE(B14,{""charttype"", ""bar""; ""max"", 1401})",,,- Bar Sparklines give a comparative estimate between the rows
+,,,,,,- Copy the same Pivot Table and remove columns and totals
+,,,,,,- Finally drag the function down to the reaminng cells
