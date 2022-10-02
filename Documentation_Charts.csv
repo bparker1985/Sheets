@@ -1,0 +1,36 @@
+Documentation for Charts Sheet,,,,,,
+,,,,,,
+Task,,,Syntax/Process,,,Notes
+1. Pie Chart,,,Populate Table & Create Chart,,,- Pie Charts are used to compare percentages of a whole
+- Use SUMIF to populate the chart,,,"SUMIF(range, criterion, [sum_range])",,,- First populate the table that will be used for the chart
+- Create a Donut Chart,,,SUMIF,,,- Cleaned Data Set a.k.a. CDC
+,,,"('Cleaned Data Set'!$I$2:$I$109,A5,'Cleaned Data Set'!$B$2:$B$109)",,,"- The 'I' column represents the product line, and is the range"
+,,,,,,- A5 is the cell labled for the product line for the first observation
+,,,Select Data -> Insert - > Chart->Pie Chart,,,- CDC and the 'B' column is how many were orderd
+,,,- Adjust the colors so that thy are not too similiar,,,- Absolute references are used so that thi sformula can be copied
+,,,- Change the title of the Chart,,,
+,,,,,,
+,,,,,,
+2. Column Chart,,,The numbers on the chart are being classified as the correspnding months for examle:,,,- Column Charts are used to compare data or multiple categories of one variable
+- Use SUMIF to populate the chart,,,1 is for January,,,- The 'G' column is used for the months
+- Create a Column Chart,,,Next the SUMIF function is used to populate the chart for the corresponding months.,,,- Now data for both the months and the amount sold is poulated
+- Create a Combo Chart,,,"('Cleaned Data Set'!$G$2:$G$109,A15,'Cleaned Data Set'!$B$2:$B$109)",,,- Absolute refernces are used so that the function can be copied.
+,,,"('Cleaned Data Set'!$G$2:$G$109,A15,'Cleaned Data Set'!$D$2:$D$109)",,,
+,,,- Select Data -> Insert -> Chart,,,- Next the data for the Revenue colum is populated using the SUMIF function
+,,,- Customize -> Series -> Sales Units -> Axis -> Right Axis,,,- Absolute referecences are used sot he function can be copied
+,,,- Change to a Combo Chart: Edit Chart -> Chart Type -> Line Chart,,,"- Since the data between the two is the difference between hundreds and thousands,"
+,,,,,,"- Sales Units can not be seen, the Chart will need to be customized so that Sales Units can be seen"
+,,,,,,- The simplest way to ensure that both points are seen is to change to column chart to a combo chart
+,,,,,,"- The columns represent the Sales Units and the Lines represent the Revenues, both by month"
+3. Area Chart,,,- Selecting the same data that was used for the Column Chart -> Insert -> Chart,,,- An Area Chart shows changes in values over time and I meant to be able to call attention to those
+- Create an Area Chart,,,-> Chart Type -> Area Chart,,,changes among multiple variables
+,,,- Customize -> Series -> Sales Units -> Axis -> Right Axis,,,- Same process of adding another Y-Axis is needed here becasue the difference in the numbers between the Sales Units and the Revenue is so large it won't be seen otherwise. 
+,,,,,,numbers between the Sales Units and the Revenue is so large it won't be seen otherwise.
+4. Geo Chart,,,Select the data -> Insert -> Chart -> Geo Chart,,,"- The Geo Chart is used for data broken down by area, including ountry or region."
+- Create a Geo Chart,,,,,,- I have taken one of the cleaned data sets that I had used with my VLookUp and Pivot Table portfolio to use  
+,,,,,,"here for the Geo Chart, but I will only be using the countries and the amount of units ordered."
+5. Gauge Chart,,,SUM(D2:D15),,,Populate the chart with data using the SUM function by going through each quarter from the CDC data set.
+- Create a Guage Chart,,,SUM(D16:D34),,,This Gauge Chart shows the revenue for each quarter
+,,,SUM(D35:D55),,,- The default setting for range was set too low and didn't give an accurate representation of  the revenue.
+,,,SUM(D56:D109),,,"- I reset the min and max values to give a more appropriate representation (MIN 30000, MAX 200000)"
+,,,Select the data -> Insert -> Chart -> Chart Type -> Gauge Chart,,,
