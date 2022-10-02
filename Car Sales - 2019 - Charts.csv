@@ -1,0 +1,51 @@
+,,
+Product Line,Sales,
+Vintage Cars,660,
+Classic Cars,1401,
+Trains,172,
+Planes,336,
+Motorcycles,573,
+Trucks and Buses,461,
+Ships,289,
+,,
+,,
+Month ID,Sales Units,Revenue
+1,191,"$16,972.96"
+2,86,"$8,139.64"
+3,197,"$18,263.70"
+4,257,"$19,623.70"
+5,213,"$20,361.17"
+6,216,"$20,103.87"
+7,294,"$28,174.54"
+8,169,"$14,730.09"
+9,221,"$17,841.70"
+10,484,"$44,273.26"
+11,1121,"$100,931.70"
+12,305,"$24,268.21"
+,,
+,,
+Quarter,Revenue,
+Quarter 1,"$43,376.30",
+Quarter 2,"$60,088.74",
+Quarter 3,"$60,746.33",
+Quarter 4,"$169,473.17",
+,,
+,,
+,,
+,,
+,,
+Country,COUNT of Order Number,
+Australia,1,
+Austria,1,
+Belgium,1,
+Denmark,1,
+France,3,
+Germany,1,
+Italy,1,
+Norway,1,
+Philippines,1,
+Singapore,1,
+Spain,2,
+Sweden,1,
+UK,2,
+USA,6,
